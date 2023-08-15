@@ -46,7 +46,7 @@ let promise = getTodos();
     <p>waiting for data...</p>
   {:then todos}
     {#each todos as todoItem}
-      <li>{todoItem.title} {todoItem.done}</li>
+      <li>{todoItem.id} {todoItem.title} {todoItem.done}</li>
     {/each}
 
   {:catch error}
